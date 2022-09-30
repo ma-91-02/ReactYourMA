@@ -1,25 +1,25 @@
 import React, { Component, Fragment, useEffect } from "react";
 import { Route, Switch, Redirect, withRouter } from "react-router-dom";
 
-import Layout from "./components/Layout/Layout";
-import Backdrop from "./components/Backdrop/Backdrop";
-import Toolbar from "./components/Toolbar/Toolbar";
-import MainNavigation from "./components/Navigation/MainNavigation/MainNavigation";
-import MobileNavigation from "./components/Navigation/MobileNavigation/MobileNavigation";
-import ErrorHandler from "./components/ErrorHandler/ErrorHandler";
+// import Layout from "./components/Layout/Layout";
+// import Backdrop from "./components/Backdrop/Backdrop";
+// import Toolbar from "./components/Toolbar/Toolbar";
+// import MainNavigation from "./components/Navigation/MainNavigation/MainNavigation";
+// import MobileNavigation from "./components/Navigation/MobileNavigation/MobileNavigation";
+// import ErrorHandler from "./components/ErrorHandler/ErrorHandler";
 
-import Landing from "./pages/Landing";
-import Pricing from "./pages/Pricing";
-import Events from "./pages/Events";
-import Features from "./pages/Features";
-import Gallery from "./pages/gallery/Gallery";
+// import Landing from "./pages/Landing";
+// import Pricing from "./pages/Pricing";
+// import Events from "./pages/Events";
+// import Features from "./pages/Features";
+// import Gallery from "./pages/gallery/Gallery";
 
-import Team from "./pages/team/Team";
-import Services from "./pages/services/Services";
-import Skills from "./pages/skills/Skills";
-import Work from "./pages/work/Work";
-import Up from "./components/up/Up";
-import Footer from "./pages/Footer";
+// import Team from "./pages/team/Team";
+// import Services from "./pages/services/Services";
+// import Skills from "./pages/skills/Skills";
+// import Work from "./pages/work/Work";
+// import Up from "./components/up/Up";
+// import Footer from "./pages/Footer";
 import "./App.css";
 
 const goToItem = (id_string) => {
@@ -153,8 +153,8 @@ class App extends Component {
   render() {
     let routes = (
       <Switch>
-        <Route path="/" exact render={(props) => <Landing />} />
-        <Route path="/pricing" exact render={(props) => <Pricing />} />
+        {/* <Route path="/" exact render={(props) => <Landing />} /> */}
+        {/* <Route path="/pricing" exact render={(props) => <Pricing />} /> */}
         <Redirect to="/" />
       </Switch>
     );
@@ -162,7 +162,7 @@ class App extends Component {
   render() {
     return (
       <Fragment>
-        {this.state.showBackdrop && (
+        {/* {this.state.showBackdrop && (
           <Backdrop onClick={this.backdropClickHandler} />
         )}
         <ErrorHandler error={this.state.error} onHandle={this.errorHandler} />
@@ -186,7 +186,8 @@ class App extends Component {
               isAuth={this.state.isAuth}
             />
           }
-        />
+        /> */}
+        <h1>test</h1>
         {/* <Switch>
           <Route
             path="/"
@@ -216,7 +217,9 @@ class App extends Component {
         {/* <Redirect to="/" />
         </Switch> */}
         {/* <Landing /> */}
-        <Landing />
+
+
+        {/* <Landing />
         <Events />
         <Pricing />
         <Features />
@@ -226,7 +229,7 @@ class App extends Component {
         <Skills />
         <Work />
         <Up />
-        <Footer />
+        <Footer /> */}
       </Fragment>
     );
   }
