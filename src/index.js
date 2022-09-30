@@ -5,6 +5,7 @@ import i18next from 'i18next'
 import { initReactI18next } from 'react-i18next'
 import HttpApi from 'i18next-http-backend'
 import LanguageDetector from 'i18next-browser-languagedetector'
+import reportWebVitals from './reportWebVitals';
 import App from "./App";
 import 'bootstrap/dist/js/bootstrap.js'
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -46,7 +47,7 @@ ReactDOM.render(
   </Suspense>,
   document.getElementById("root")
 );
-
+reportWebVitals();
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: http://bit.ly/CRA-PWA
