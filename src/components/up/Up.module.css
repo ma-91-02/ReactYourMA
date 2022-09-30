@@ -1,0 +1,20 @@
+.scrollTop {
+  border: 1px solid var(--main-color);
+}
+
+.scrollTop a {
+  width: 50px;
+  height: 40px;
+  color: var(--main-color-alt);
+  text-align: center;
+  position: fixed;
+  right: 15px;
+  bottom: 35px;
+  z-index: 998;
+  cursor: pointer;
+  font-size: 40px;
+}
+
+#scrollTop:hover {
+  background-color: #444;
+}
