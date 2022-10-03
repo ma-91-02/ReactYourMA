@@ -10,7 +10,7 @@ const Events = () => {
     <div className="events" id="events">
       <div className="dots dots-up"></div>
       <div className="dots dots-down"></div>
-      <h2>{t("latestEvents")}</h2>
+      <h2 className="main-title">{t("latestEvents")}</h2>
       <div className="container">
         <img src={event} alt="" />
         <div className="info">

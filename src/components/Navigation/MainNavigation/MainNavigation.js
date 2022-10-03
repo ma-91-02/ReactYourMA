@@ -11,7 +11,6 @@ import "./MainNavigation.css";
 
 const MainNavigation = (props) => {
   // const func = id_string => { 
-  
   //   document.querySelector(`#${id_string}`).scrollIntoView()
   //  }
   return(

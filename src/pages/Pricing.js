@@ -11,7 +11,7 @@ const Pricing = () => {
     <div className={styles.pricing} id="pricing">
       <div className="dots dots-up"></div>
       <div className="dots dots-down"></div>
-      <h2>{t("pricing")}</h2>
+      <h2 className="main-title">{t("pricing")}</h2>
       <div className={styles.container}>
         <div className={styles.box}>
           <div className={styles.title}>{t("tp0")}</div>

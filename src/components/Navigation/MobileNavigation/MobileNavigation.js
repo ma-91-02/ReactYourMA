@@ -4,7 +4,6 @@ import NavigationItems from '../NavigationItems/NavigationItems';
 import './MobileNavigation.css';
 
 // const func = id_string => { 
-  
 //   document.querySelector(`#${id_string}`).scrollIntoView()
 //  }
 const mobileNavigation = props => (

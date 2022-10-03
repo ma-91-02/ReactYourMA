@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import { withRouter} from 'react-router-dom';
+import {withRouter } from "react-router-dom";
 
 import Layout from "./components/Layout/Layout";
 import Backdrop from "./components/Backdrop/Backdrop";
@@ -150,15 +150,6 @@ class App extends Component {
   errorHandler = () => {
     this.setState({ error: null });
   };
-  // render() {
-  //   let routes = (
-  //     <Switch>
-  //       <Route path="/" exact render={(props) => <Landing />} />
-  //       <Route path="/pricing" exact render={(props) => <Pricing />} />
-  //       <Redirect to="/" />
-  //     </Switch>
-  //   );
-  // }
   render() {
     return (
       <Fragment>
@@ -187,35 +178,6 @@ class App extends Component {
             />
           }
         />
-        {/* <Switch>
-          <Route
-            path="/"
-            exact
-            render={(props) => [
-              <Landing />,
-              <Events />,
-
-              <Pricing />,
-              <Features />,
-              <Gallery />,
-              <Team />,
-              <Services />,
-              <Skills />,
-              <Work />,
-              <Up />,
-              <Footer />,
-            ]}
-          /> */}
-        {/* <Route path="/pricing" exact render={(props) => <Pricing />} />
-          <Route path="/gallery" exact render={(props) => <Gallery />} />
-          <Route path="/gallery" exact render={(props) => <Gallery />} />
-          <Route path="/gallery" exact render={(props) => <Gallery />} />
-          <Route path="/gallery" exact render={(props) => <Gallery />} />
-          <Route path="/gallery" exact render={(props) => <Gallery />} />
-          <Route path="/gallery" exact render={(props) => <Gallery />} /> */}
-        {/* <Redirect to="/" />
-        </Switch> */}
-        {/* <Landing /> */}
         <Landing />
         <Events />
         <Pricing />
