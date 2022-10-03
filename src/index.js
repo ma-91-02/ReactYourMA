@@ -7,9 +7,9 @@ import HttpApi from 'i18next-http-backend'
 import LanguageDetector from 'i18next-browser-languagedetector'
 import App from "./App";
 import logo from './images/logo.png';
-// import 'bootstrap/dist/js/bootstrap.js'
-// import 'bootstrap/dist/css/bootstrap.min.css'
-// import 'flag-icon-css/css/flag-icon.min.css'
+import 'bootstrap/dist/js/bootstrap.js'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'flag-icon-css/css/flag-icon.min.css'
 import "./index.scss";
 
 i18next
