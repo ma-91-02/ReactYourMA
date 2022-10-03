@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react'
+import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next'
 import i18next from 'i18next'
 import cookies from 'js-cookie'
@@ -29,9 +30,7 @@ const SelectLang = () => {
     // multi lang
     const currentLanguageCode = cookies.get('i18next') || 'en'
     const currentLanguage = languages.find((l) => l.code === currentLanguageCode)
-    const { t } = useTranslation()
-  
-    
+    const { t } = useTranslation();
   
     useEffect(() => {
       console.log('Setting page stuff')
@@ -58,8 +57,8 @@ const SelectLang = () => {
               </li>
               {languages.map(({ code, name, country_code }) => (
                 <li key={country_code}>
-                  {/* <a style={{position:"relative"}}
-                    href="#"
+                  <Link style={{position:"relative"}}
+                    to="#"
                     className={classNames('dropdown-item', {
                       disabled: currentLanguageCode === code,
                     })}
@@ -74,7 +73,7 @@ const SelectLang = () => {
                       }}
                     ></span>
                     {name}
-                  </a> */}
+                  </Link>
                 </li>
               ))}
             </ul>
