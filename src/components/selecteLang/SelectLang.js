@@ -58,7 +58,7 @@ const SelectLang = () => {
               </li>
               {languages.map(({ code, name, country_code }) => (
                 <li key={country_code}>
-                  <a style={{position:"relative"}}
+                  {/* <a style={{position:"relative"}}
                     href="#"
                     className={classNames('dropdown-item', {
                       disabled: currentLanguageCode === code,
@@ -74,7 +74,7 @@ const SelectLang = () => {
                       }}
                     ></span>
                     {name}
-                  </a>
+                  </a> */}
                 </li>
               ))}
             </ul>
