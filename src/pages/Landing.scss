@@ -72,14 +72,14 @@
     box-shadow: 0 0 10px var(--main-color-alt);
   }
   .go-down {
-    color: var(--main-color);
+    color: var(--main-color-alt);
     position: absolute;
     bottom: 60px;
     left: 50%;
     transform: translateX(-50%);
     transition: var(--main-transition);
     &:hover {
-      color: var(--main-color-alt);
+      color: var(--main-color);
     }
     i {
       animation: bouncing 1.5s infinite;
