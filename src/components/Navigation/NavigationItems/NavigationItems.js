@@ -16,9 +16,9 @@ const NavigationItems = (props) => {
       </a>
     </li>,
     <li className={["navigation-item", props.mobile ? "mobile" : ""].join(" ")}>
-      <NavLink to="/#pricing" exact onClick={props.onChoose}>
+      <a href="/#pricing" exact onClick={props.onChoose}>
         {t("pricing")}
-      </NavLink>
+      </a>
     </li>,
     <li className={["navigation-item", props.mobile ? "mobile" : ""].join(" ")}>
       <a href="#gallery" exact onClick={props.onChoose}>
@@ -26,19 +26,19 @@ const NavigationItems = (props) => {
       </a>
     </li>,
     <li className={["navigation-item", props.mobile ? "mobile" : ""].join(" ")}>
-      <NavLink to="#services" exact onClick={props.onChoose}>
+      <a href="#services" exact onClick={props.onChoose}>
         {t("service")}
-      </NavLink>
+      </a>
     </li>,
     <li className={["navigation-item", props.mobile ? "mobile" : ""].join(" ")}>
-      <NavLink to="#our-skills" exact onClick={props.onChoose}>
+      <a href="#our-skills" exact onClick={props.onChoose}>
         {t("ourSkills")}
-      </NavLink>
+      </a>
     </li>,
     <li className={["navigation-item", props.mobile ? "mobile" : ""].join(" ")}>
-      <NavLink to="#team" exact onClick={props.onChoose}>
+      <a href="#team" exact onClick={props.onChoose}>
         {t("teamMembers")}
-      </NavLink>
+      </a>
     </li>,
     // <li className={["navigation-item", props.mobile ? "mobile" : ""].join(" ")}>
     //   <NavLink to="team" exact onClick={props.onChoose}>

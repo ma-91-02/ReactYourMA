@@ -25,9 +25,9 @@ const Landing = () => {
           <img src={pic}  alt="logo"/>
         </div>
       </div>
-      <Link to="#events" class="go-down">
+      <a href="#events" class="go-down">
         <i class="fas fa-angle-double-down fa-2x"></i>
-      </Link>
+      </a>
     </div>
   );
 };
