@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import styles from "./Pricing.module.css";
 import "../index.scss";
 
@@ -30,7 +30,7 @@ const Pricing = () => {
             <br />
             <br />
           </ul>
-          <Link to="#">{t("more")}</Link>
+          {/* <Link to="#">{t("more")}</Link> */}
         </div>
         <div className={styles.box}>
           <div className={styles.title}>{t('tp2')}</div>
@@ -44,7 +44,7 @@ const Pricing = () => {
             <li>{t('pcsh25')}</li>
             <br/><br/><br/><br/><br/><br/>
           </ul>
-          <Link to="#">{t("more")}</Link>
+          {/* <Link to="#">{t("more")}</Link> */}
         </div>
         <div class={styles.box}>
           <div className={styles.title}>{t("tp1")}</div>
@@ -63,7 +63,7 @@ const Pricing = () => {
             <br />
             <br />
           </ul>
-          <Link to="#">{t("more")}</Link>
+          {/* <Link to="#">{t("more")}</Link> */}
         </div>
         <div className={styles.box}>
           <div className={styles.title}>{t('tp3')}</div>
@@ -77,7 +77,7 @@ const Pricing = () => {
             <li>{t('pcsh35')}</li>
             <br/><br/><br/><br/><br/><br/>
           </ul>
-          <Link to="#">{t("more")}</Link>
+          {/* <Link to="#">{t("more")}</Link> */}
         </div>
         <div className={styles.box}>
           <div className={styles.title}>{t('tp4')}</div>
@@ -91,7 +91,7 @@ const Pricing = () => {
             <li>{t('pcsh45')}</li>
             <br/><br/><br/><br/><br/><br/>
           </ul>
-          <Link to="#">{t("more")}</Link>
+          {/* <Link to="#">{t("more")}</Link> */}
         </div>
         <div className={styles.box}>
           <div className={styles.title}>{t('tp5')}</div>
@@ -105,7 +105,7 @@ const Pricing = () => {
             <li>{t('pcsh55')}</li>
             <br/><br/><br/><br/><br/><br/>
           </ul>
-          <Link to="#">{t("more")}</Link>
+          {/* <Link to="#">{t("more")}</Link> */}
         </div>
         <div className={styles.box}>
           <div className={styles.title}>{t('tp6')}</div>
@@ -119,7 +119,7 @@ const Pricing = () => {
             <li>{t('pcsh65')}</li>
             <br/><br/><br/><br/><br/><br/>
           </ul>
-          <Link to="#">{t("more")}</Link>
+          {/* <Link to="#">{t("more")}</Link> */}
         </div>
         <div className={styles.box}>
           <div className={styles.title}>{t('tp7')}</div>
@@ -133,7 +133,7 @@ const Pricing = () => {
             <li>{t('pcsh75')}</li>
             <br/><br/><br/><br/><br/><br/>
           </ul>
-          <Link to="#">{t("more")}</Link>
+          {/* <Link to="#">{t("more")}</Link> */}
         </div>
         <div className={styles.box}>
           <div className={styles.title}>{t('tp8')}</div>
@@ -147,7 +147,7 @@ const Pricing = () => {
             <li>{t('pcsh85')}</li>
             <br/><br/><br/><br/><br/><br/>
           </ul>
-          <Link to="#">{t("more")}</Link>
+          {/* <Link to="#">{t("more")}</Link> */}
         </div>
       </div>
     </div>
