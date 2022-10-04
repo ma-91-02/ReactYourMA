@@ -60,10 +60,10 @@ const Footer = () => {
         <div className="box">
           <ul className="links">
             <li>
-              <Link to="{{url('/')}}">{t("home")}</Link>
+              <a href="/">{t("home")}</a>
             </li>
             <li>
-              <Link to="{{url('/#pricing')}}">{t("pricing")}</Link>
+              <a href="#pricing">{t("pricing")}</a>
             </li>
             <li>
               <Link to="#features">{t("features")}</Link>

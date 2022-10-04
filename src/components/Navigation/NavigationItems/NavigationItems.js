@@ -11,9 +11,9 @@ const NavigationItems = (props) => {
   const { t } = useTranslation();
   return [
     <li className={["navigation-item", props.mobile ? "mobile" : ""].join(" ")}>
-      <NavLink to="/#home" exact onClick={props.onChoose}>
+      <a href="/#home" exact onClick={props.onChoose}>
         {t("home")}
-      </NavLink>
+      </a>
     </li>,
     <li className={["navigation-item", props.mobile ? "mobile" : ""].join(" ")}>
       <NavLink to="/#pricing" exact onClick={props.onChoose}>
@@ -21,9 +21,9 @@ const NavigationItems = (props) => {
       </NavLink>
     </li>,
     <li className={["navigation-item", props.mobile ? "mobile" : ""].join(" ")}>
-      <NavLink to="#gallery" exact onClick={props.onChoose}>
+      <a href="#gallery" exact onClick={props.onChoose}>
         {t("gallery")}
-      </NavLink>
+      </a>
     </li>,
     <li className={["navigation-item", props.mobile ? "mobile" : ""].join(" ")}>
       <NavLink to="#services" exact onClick={props.onChoose}>
