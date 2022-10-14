@@ -76,6 +76,14 @@ const Footer = () => {
             <div className="info">{t("addres")}</div>
           </div>
           <div className="line">
+            <i className="fas fa-map-marker-alt fa-fw"></i>
+            <div className="info">{t("addres1")}</div>
+          </div>
+          <div className="line">
+            <i className="fas fa-map-marker-alt fa-fw"></i>
+            <div className="info">{t("addres2")}</div>
+          </div>
+          <div className="line">
             <i className="far fa-clock fa-fw"></i>
             <div className="info">
               {t("businessHours")}
