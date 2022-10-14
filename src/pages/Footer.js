@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import "./Footer.scss";
 import "../../node_modules/font-awesome/css/font-awesome.min.css";
 import { useTranslation } from "react-i18next";
@@ -23,36 +23,36 @@ const Footer = () => {
           </h3>
           <ul className="social">
             <li>
-              <Link
-                to="https://www.facebook.com/Your-MA-102030702098496"
+              <a
+                href="https://www.facebook.com/Your-MA-102030702098496"
                 className="facebook"
               >
                 <i className="fab fa-facebook-f"></i>
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                to="https://www.youtube.com/channel/UCoyfWHRcfOvnh7asK7s4-gQ"
+              <a
+                href="https://www.youtube.com/channel/UCoyfWHRcfOvnh7asK7s4-gQ"
                 className="youtube"
               >
                 <i className="fab fa-youtube"></i>
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                to="https://twitter.com/MohammedZurfi"
+              <a
+                href="https://twitter.com/MohammedZurfi"
                 className="twitter"
               >
                 <i className="fab fa-vk"></i>
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                to="https://t.me/joinchat/Yn78bk9MxKcxOTJi"
+              <a
+                href="https://t.me/your_ma2021"
                 className="twitter"
               >
                 <i className="fab fa-telegram-plane"></i>
-              </Link>
+              </a>
             </li>
           </ul>
           <p className="text">{t("website_iphone_android")}</p>
@@ -66,7 +66,7 @@ const Footer = () => {
               <a href="#pricing">{t("pricing")}</a>
             </li>
             <li>
-              <Link to="#features">{t("features")}</Link>
+              <a href="#features">{t("features")}</a>
             </li>
           </ul>
         </div>
