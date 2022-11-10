@@ -1,11 +1,12 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import "./Gallery.scss";
 import { useTranslation } from "react-i18next";
 import them2 from "../../images/theme2.png";
 import them1 from "../../images/theme1.png";
 import them3 from "../../images/theme3.png";
 import them4 from "../../images/theme4.png";
+import oldstol from "../../images/oldstol.png";
 
 const Gallery = () => {
   const { t } = useTranslation();
@@ -42,6 +43,14 @@ const Gallery = () => {
               </div>
             </div>
           </Link>
+
+          <a href="https://oldstol.com/"  target="_blank" rel="noreferrer">
+            <div className="box">
+              <div className="image">
+                <img src={oldstol} alt="" />
+              </div>
+            </div>
+          </a>
         </div>
       </div>
     </div>
