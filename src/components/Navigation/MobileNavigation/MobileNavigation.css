@@ -10,7 +10,7 @@
   transition: transform 0.3s ease-out;
   transform: translateX(-100%);
   z-index: 200;
-  padding: 3rem 2rem;
+  padding: 5rem 2rem;
 }
 
 .mobile-nav.open {
