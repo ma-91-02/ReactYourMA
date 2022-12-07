@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 
 import MobileToggle from "../MobileToggle/MobileToggle";
 import Logo from "../../Logo/Logo";
@@ -19,9 +19,9 @@ const MainNavigation = (props) => {
       <MobileToggle onOpen={props.onOpenMobileNav} />
       
       <div className="main-nav__logo">
-        <NavLink to="#home" onClick={props.onChoose}>
+        <a href="\" exact>
           <Logo />
-        </NavLink>
+        </a>
       </div>
       <div className="spacer" />
       <ul className="main-nav__items">

@@ -11,7 +11,7 @@ const NavigationItems = (props) => {
   const { t } = useTranslation();
   return [
     <li className={["navigation-item", props.mobile ? "mobile" : ""].join(" ")}>
-      <a href="/#home" exact onClick={props.onChoose}>
+      <a href="/" exact >
         {t("home")}
       </a>
     </li>,
