@@ -18,7 +18,7 @@ i18next
   .use(initReactI18next)
   .init({
     supportedLngs: ['en', 'ar', 'ru'],
-    fallbackLng: 'en',
+    fallbackLng: 'ar',
     debug: false,
     // Options for language detector
     detection: {
