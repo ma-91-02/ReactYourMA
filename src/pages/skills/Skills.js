@@ -9,7 +9,7 @@ const Skills = () => {
     <div className="ourSkills" id="our-skills">
       <h2 className="main-title">{t("ourSkills")}</h2>
       <div className="container">
-        <img src={skill} alt="" />
+        <img src={skill} alt="skills"  height="50%" width="50%"/>
         <div className="skills">
           <div className="skill">
             <h3>

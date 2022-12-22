@@ -1,5 +1,5 @@
 import React from "react";
-// import { NavLink } from "react-router-dom";
+// import { NavLink, Link } from "react-router-dom";
 
 import MobileToggle from "../MobileToggle/MobileToggle";
 import Logo from "../../Logo/Logo";
@@ -8,32 +8,33 @@ import SelectLang from "../../selecteLang/SelectLang";
 
 import "./MainNavigation.css";
 
-
 const MainNavigation = (props) => {
-  // const func = id_string => { 
+  // const func = id_string => {
   //   document.querySelector(`#${id_string}`).scrollIntoView()
   //  }
-  return(
+  return (
     <div className="container">
-    <nav className="main-nav">
-      <MobileToggle onOpen={props.onOpenMobileNav} />
-      
-      <div className="main-nav__logo">
-        <a href="\" exact>
-          <Logo />
-        </a>
-      </div>
-      <div className="spacer" />
-      <ul className="main-nav__items">
-        <NavigationItems onChoose={props.onChooseItem} isAuth={props.isAuth} onLogout={props.onLogout} />
-        {/* <NavigationItems/> */}
-      </ul>
-      <SelectLang />
-    </nav>
-    
-  </div>
-);
-}
-  
+      <nav className="main-nav">
+        <MobileToggle onOpen={props.onOpenMobileNav} />
+
+        <div className="main-nav__logo">
+          <a href="/#home" >
+            <Logo />
+          </a>
+        </div>
+        <div className="spacer" />
+        <ul className="main-nav__items">
+          <NavigationItems
+            onChoose={props.onChooseItem}
+            isAuth={props.isAuth}
+            onLogout={props.onLogout}
+          />
+          {/* <NavigationItems/> */}
+        </ul>
+        <SelectLang />
+      </nav>
+    </div>
+  );
+};
 
 export default MainNavigation;

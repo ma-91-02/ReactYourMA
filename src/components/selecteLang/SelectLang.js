@@ -10,7 +10,7 @@ import './SelectLang.scss';
 const languages = [
   {
     code: 'ru',
-    name: 'русски',
+    name: 'Русский',
     country_code: 'ru',
   },
   {
@@ -26,16 +26,19 @@ const languages = [
   },
 ]
 
-const SelectLang = () => {
+const SelectLang =  () => {
     // multi lang
-    const currentLanguageCode = cookies.get('i18next') || 'en'
+    const currentLanguageCode =  cookies.get('i18next') || 'en'
     const currentLanguage = languages.find((l) => l.code === currentLanguageCode)
     const { t } = useTranslation();
   
-    useEffect(() => {
-      console.log('Setting page stuff')
-      document.body.dir = currentLanguage.dir || 'ltr'
-      document.title = t('app_title')
+    useEffect(() =>  {
+      // async ()=>{
+
+        document.body.dir =  currentLanguage.dir || 'ltr'
+        document.title = t('app_title')
+      // }
+      // console.log('Setting page stuff')
     }, [currentLanguage, t])
     return (
         <div className="language-select" style={{position:"relative",zIndex:"999"}} >
@@ -58,7 +61,7 @@ const SelectLang = () => {
               {languages.map(({ code, name, country_code }) => (
                 <li key={country_code}>
                   <Link style={{position:"relative"}}
-                    to="#"
+                    to={code}
                     className={classNames('dropdown-item', {
                       disabled: currentLanguageCode === code,
                     })}

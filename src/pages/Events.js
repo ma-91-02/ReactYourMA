@@ -12,7 +12,7 @@ const Events = () => {
       <div className="dots dots-down"></div>
       <h2 className="main-title">{t("latestEvents")}</h2>
       <div className="container">
-        <img src={event} alt="" />
+        <img src={event} alt="event" height="100%" width="100%"/>
         <div className="info">
           <div className="time">
             <div className="unit">

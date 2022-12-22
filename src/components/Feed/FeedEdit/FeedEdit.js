@@ -46,20 +46,20 @@ class FeedEdit extends Component {
         title: {
           ...prevState.postForm.title,
           value: this.props.selectedPost.title,
-          valid: true
+          // valid: true
         },
         image: {
           ...prevState.postForm.image,
           value: this.props.selectedPost.imagePath,
-          valid: true
+          // valid: true
         },
         content: {
           ...prevState.postForm.content,
           value: this.props.selectedPost.content,
-          valid: true
+          // valid: true
         }
       };
-      this.setState({ postForm: postForm, formIsValid: true });
+      // this.setState({ postForm: postForm, formIsValid: true });
     }
   }
 
@@ -74,7 +74,7 @@ class FeedEdit extends Component {
         });
     }
     this.setState(prevState => {
-      let isValid = true;
+      // let isValid = true;
       for (const validator of prevState.postForm[input].validators) {
         isValid = isValid && validator(value);
       }
@@ -86,7 +86,7 @@ class FeedEdit extends Component {
           value: files ? files[0] : value
         }
       };
-      let formIsValid = true;
+      // let formIsValid = true;
       for (const inputName in updatedForm) {
         formIsValid = formIsValid && updatedForm[inputName].valid;
       }
@@ -104,7 +104,7 @@ class FeedEdit extends Component {
           ...prevState.postForm,
           [input]: {
             ...prevState.postForm[input],
-            touched: true
+            // touched: true
           }
         }
       };

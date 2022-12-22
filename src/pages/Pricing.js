@@ -33,20 +33,25 @@ const Pricing = () => {
           {/* <Link to="#">{t("more")}</Link> */}
         </div>
         <div className={styles.box}>
-          <div className={styles.title}>{t('tp2')}</div>
+          <div className={styles.title}>{t("tp2")}</div>
           <div className={styles.price}>
-            <span className={styles.amount}>{t('pp2')}</span>
-            <span className={styles.time}>{t('pcsh21')}</span>
+            <span className={styles.amount}>{t("pp2")}</span>
+            <span className={styles.time}>{t("pcsh21")}</span>
           </div>
           <ul>
-            <li>{t('pcsh23')}</li>
-            <li>{t('pcsh24')}</li>
-            <li>{t('pcsh25')}</li>
-            <br/><br/><br/><br/><br/><br/>
+            <li>{t("pcsh23")}</li>
+            <li>{t("pcsh24")}</li>
+            <li>{t("pcsh25")}</li>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
           </ul>
           {/* <Link to="#">{t("more")}</Link> */}
         </div>
-        <div class={styles.box}>
+        <div className={styles.box}>
           <div className={styles.title}>{t("tp1")}</div>
           <div className={styles.price}>
             <span className={styles.amount}>{t("pp1")}</span>
@@ -66,86 +71,116 @@ const Pricing = () => {
           {/* <Link to="#">{t("more")}</Link> */}
         </div>
         <div className={styles.box}>
-          <div className={styles.title}>{t('tp3')}</div>
+          <div className={styles.title}>{t("tp3")}</div>
           <div className={styles.price}>
-            <span className={styles.amount}>{t('pp3')}</span>
-            <span className={styles.time}>{t('pcsh31')}</span>
+            <span className={styles.amount}>{t("pp3")}</span>
+            <span className={styles.time}>{t("pcsh31")}</span>
           </div>
           <ul>
-            <li>{t('pcsh33')}</li>
-            <li>{t('pcsh34')}</li>
-            <li>{t('pcsh35')}</li>
-            <br/><br/><br/><br/><br/><br/>
+            <li>{t("pcsh33")}</li>
+            <li>{t("pcsh34")}</li>
+            <li>{t("pcsh35")}</li>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
           </ul>
           {/* <Link to="#">{t("more")}</Link> */}
         </div>
         <div className={styles.box}>
-          <div className={styles.title}>{t('tp4')}</div>
+          <div className={styles.title}>{t("tp4")}</div>
           <div className={styles.price}>
-            <span className={styles.amount}>{t('pp4')}</span>
-            <span className={styles.time}>{t('pcsh41')}</span>
+            <span className={styles.amount}>{t("pp4")}</span>
+            <span className={styles.time}>{t("pcsh41")}</span>
           </div>
           <ul>
-            <li>{t('pcsh43')}</li>
-            <li>{t('pcsh44')}</li>
-            <li>{t('pcsh45')}</li>
-            <br/><br/><br/><br/><br/><br/>
+            <li>{t("pcsh43")}</li>
+            <li>{t("pcsh44")}</li>
+            <li>{t("pcsh45")}</li>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
           </ul>
           {/* <Link to="#">{t("more")}</Link> */}
         </div>
         <div className={styles.box}>
-          <div className={styles.title}>{t('tp5')}</div>
+          <div className={styles.title}>{t("tp5")}</div>
           <div className={styles.price}>
-            <span className={styles.amount}>{t('pp5')}</span>
-            <span className={styles.time}>{t('pcsh51')}</span>
+            <span className={styles.amount}>{t("pp5")}</span>
+            <span className={styles.time}>{t("pcsh51")}</span>
           </div>
           <ul>
-            <li>{t('pcsh53')}</li>
-            <li>{t('pcsh54')}</li>
-            <li>{t('pcsh55')}</li>
-            <br/><br/><br/><br/><br/><br/>
+            <li>{t("pcsh53")}</li>
+            <li>{t("pcsh54")}</li>
+            <li>{t("pcsh55")}</li>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
           </ul>
           {/* <Link to="#">{t("more")}</Link> */}
         </div>
         <div className={styles.box}>
-          <div className={styles.title}>{t('tp6')}</div>
+          <div className={styles.title}>{t("tp6")}</div>
           <div className={styles.price}>
-            <span className={styles.amount}>{t('pp6')}</span>
-            <span className={styles.time}>{t('pcsh61')}</span>
+            <span className={styles.amount}>{t("pp6")}</span>
+            <span className={styles.time}>{t("pcsh61")}</span>
           </div>
           <ul>
-            <li>{t('pcsh63')}</li>
-            <li>{t('pcsh64')}</li>
-            <li>{t('pcsh65')}</li>
-            <br/><br/><br/><br/><br/><br/>
+            <li>{t("pcsh63")}</li>
+            <li>{t("pcsh64")}</li>
+            <li>{t("pcsh65")}</li>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
           </ul>
           {/* <Link to="#">{t("more")}</Link> */}
         </div>
         <div className={styles.box}>
-          <div className={styles.title}>{t('tp7')}</div>
+          <div className={styles.title}>{t("tp7")}</div>
           <div className={styles.price}>
-            <span className={styles.amount}>{t('pp7')}</span>
-            <span className={styles.time}>{t('pcsh71')}</span>
+            <span className={styles.amount}>{t("pp7")}</span>
+            <span className={styles.time}>{t("pcsh71")}</span>
           </div>
           <ul>
-            <li>{t('pcsh73')}</li>
-            <li>{t('pcsh74')}</li>
-            <li>{t('pcsh75')}</li>
-            <br/><br/><br/><br/><br/><br/>
+            <li>{t("pcsh73")}</li>
+            <li>{t("pcsh74")}</li>
+            <li>{t("pcsh75")}</li>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
           </ul>
           {/* <Link to="#">{t("more")}</Link> */}
         </div>
         <div className={styles.box}>
-          <div className={styles.title}>{t('tp8')}</div>
+          <div className={styles.title}>{t("tp8")}</div>
           <div className={styles.price}>
-            <span className={styles.amount}>{t('pp8')}</span>
-            <span className={styles.time}>{t('pcsh81')}</span>
+            <span className={styles.amount}>{t("pp8")}</span>
+            <span className={styles.time}>{t("pcsh81")}</span>
           </div>
           <ul>
-            <li>{t('pcsh83')}</li>
-            <li>{t('pcsh84')}</li>
-            <li>{t('pcsh85')}</li>
-            <br/><br/><br/><br/><br/><br/>
+            <li>{t("pcsh83")}</li>
+            <li>{t("pcsh84")}</li>
+            <li>{t("pcsh85")}</li>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
           </ul>
           {/* <Link to="#">{t("more")}</Link> */}
         </div>

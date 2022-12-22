@@ -11,10 +11,10 @@ return (
     <div className="workSteps" id="work-steps">
     <h2 className="main-title">{t('howItWork')}</h2>
     <div className="container">
-      <img src={ws} alt="" className="image" />
+      <img src={ws} alt="work steps" height="50%" width="50%"className="image" />
       <div className="info">
         <div className="box">
-          <img src={ws1} alt="" />
+          <img src={ws1} alt="work1" height="100%" width="100%" />
           <div className="text">
             <h3>{t('businessAnalysis')}</h3>
             <p>
@@ -23,7 +23,7 @@ return (
           </div>
         </div>
         <div className="box">
-          <img src={ws2} alt="" />
+          <img src={ws2} alt="work2"height="100%" width="100%" />
           <div className="text">
             <h3>{t('businessDesign')}</h3>
             <p>
@@ -32,7 +32,7 @@ return (
           </div>
         </div>
         <div className="box">
-          <img src={ws3} alt="" />
+          <img src={ws3} alt="work3"height="100%" width="100%" />
           <div className="text">
             <h3>{t('Developement')}</h3>
             <p>

@@ -16,7 +16,7 @@ const Team = () => {
       <div className={styles.container}>
         <div className={styles.box}>
           <div className={styles.data}>
-            <img className={styles.img} src={saif} alt="" />
+            <img className={styles.img} src={saif} alt="saif" height="100%" width="100%" />
             <div className={styles.social}>
               <Link to="#">
                 <i className="fab fa-facebook-f"></i>
@@ -39,7 +39,7 @@ const Team = () => {
         </div>
         <div className={styles.box}>
           <div className={styles.data}>
-            <img className={styles.img} src={ceo} alt="" />
+            <img className={styles.img} src={ceo} alt="mohamed al-zurfi" height="100%" width="100%" />
             <div className={styles.social}>
               <Link to="#">
                 <i className="fab fa-facebook-f"></i>
@@ -62,7 +62,7 @@ const Team = () => {
         </div>
         <div className={styles.box}>
           <div className={styles.data}>
-            <img className={styles.img} src={alina} alt="" />
+            <img className={styles.img} src={alina} alt="alina"height="100%" width="100%" />
             <div className={styles.social}>
               <Link to="#">
                 <i className="fab fa-facebook-f"></i>
@@ -85,7 +85,7 @@ const Team = () => {
         </div>
         <div className={styles.box}>
           <div className={styles.data}>
-            <img className={styles.img} src={youri} alt="" />
+            <img className={styles.img} src={youri} alt="youri" height="100%" width="100%" />
             <div className={styles.social}>
               <Link to="#">
                 <i className="fab fa-facebook-f"></i>

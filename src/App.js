@@ -1,155 +1,48 @@
 import React, { Component, Fragment } from "react";
-import {withRouter } from "react-router-dom";
-
-import Layout from "./components/Layout/Layout";
-import Backdrop from "./components/Backdrop/Backdrop";
-import Toolbar from "./components/Toolbar/Toolbar";
-import MainNavigation from "./components/Navigation/MainNavigation/MainNavigation";
-import MobileNavigation from "./components/Navigation/MobileNavigation/MobileNavigation";
-import ErrorHandler from "./components/ErrorHandler/ErrorHandler";
-
-import Landing from "./pages/Landing";
-import Pricing from "./pages/Pricing";
-import Events from "./pages/Events";
-import Features from "./pages/Features";
-import Gallery from "./pages/gallery/Gallery";
-
-import Team from "./pages/team/Team";
-import Services from "./pages/services/Services";
-import Skills from "./pages/skills/Skills";
-import Work from "./pages/work/Work";
-import Up from "./components/up/Up";
-import Footer from "./pages/Footer";
+// import {withRouter } from "react-router-dom";
 import "./App.css";
 
-const goToItem = (id_string) => {
-  document.querySelector(`#${id_string}`).scrollIntoView();
-};
+import Layout from "./components/Layout/Layout";
+const Backdrop = React.lazy(() => import("./components/Backdrop/Backdrop"));
+const Toolbar = React.lazy(() => import("./components/Toolbar/Toolbar"));
+const MainNavigation = React.lazy(() =>
+  import("./components/Navigation/MainNavigation/MainNavigation")
+);
+const MobileNavigation = React.lazy(() =>
+  import("./components/Navigation/MobileNavigation/MobileNavigation")
+);
+const Landing = React.lazy(() => import("./pages/Landing"));
+const Up = React.lazy(() => import("./components/up/Up"));
+
+const Events = React.lazy(() => import("./pages/Events"));
+const Pricing = React.lazy(() => import("./pages/Pricing"));
+const Features = React.lazy(() => import("./pages/Features"));
+const Gallery = React.lazy(() => import("./pages/gallery/Gallery"));
+
+const Team = React.lazy(() => import("./pages/team/Team"));
+const Services = React.lazy(() => import("./pages/services/Services"));
+const Skills = React.lazy(() => import("./pages/skills/Skills"));
+const Work = React.lazy(() => import("./pages/work/Work"));
+
+const Footer = React.lazy(() => import("./pages/Footer"));
+const ErrorHandler = React.lazy(() =>
+  import("./components/ErrorHandler/ErrorHandler")
+);
+
 class App extends Component {
   state = {
     showBackdrop: false,
     showMobileNav: false,
-    isAuth: true,
-    token: null,
-    userId: null,
-    authLoading: false,
-    error: null,
   };
-
-  componentDidMount() {
-    const token = localStorage.getItem("token");
-    const expiryDate = localStorage.getItem("expiryDate");
-    if (!token || !expiryDate) {
-      return;
-    }
-    if (new Date(expiryDate) <= new Date()) {
-      this.logoutHandler();
-      return;
-    }
-    const userId = localStorage.getItem("userId");
-    const remainingMilliseconds =
-      new Date(expiryDate).getTime() - new Date().getTime();
-    this.setState({ isAuth: true, token: token, userId: userId });
-    this.setAutoLogout(remainingMilliseconds);
-  }
 
   mobileNavHandler = (isOpen) => {
     this.setState({ showMobileNav: isOpen, showBackdrop: isOpen });
-    goToItem();
   };
 
   backdropClickHandler = () => {
     this.setState({ showBackdrop: false, showMobileNav: false, error: null });
   };
 
-  logoutHandler = () => {
-    this.setState({ isAuth: false, token: null });
-    localStorage.removeItem("token");
-    localStorage.removeItem("expiryDate");
-    localStorage.removeItem("userId");
-  };
-
-  loginHandler = (event, authData) => {
-    event.preventDefault();
-    this.setState({ authLoading: true });
-    fetch("URL")
-      .then((res) => {
-        if (res.status === 422) {
-          throw new Error("Validation failed.");
-        }
-        if (res.status !== 200 && res.status !== 201) {
-          console.log("Error!");
-          throw new Error("Could not authenticate you!");
-        }
-        return res.json();
-      })
-      .then((resData) => {
-        console.log(resData);
-        this.setState({
-          isAuth: true,
-          token: resData.token,
-          authLoading: false,
-          userId: resData.userId,
-        });
-        localStorage.setItem("token", resData.token);
-        localStorage.setItem("userId", resData.userId);
-        const remainingMilliseconds = 60 * 60 * 1000;
-        const expiryDate = new Date(
-          new Date().getTime() + remainingMilliseconds
-        );
-        localStorage.setItem("expiryDate", expiryDate.toISOString());
-        this.setAutoLogout(remainingMilliseconds);
-      })
-      .catch((err) => {
-        console.log(err);
-        this.setState({
-          isAuth: false,
-          authLoading: false,
-          error: err,
-        });
-      });
-  };
-
-  signupHandler = (event, authData) => {
-    event.preventDefault();
-    this.setState({ authLoading: true });
-    fetch("URL")
-      .then((res) => {
-        if (res.status === 422) {
-          throw new Error(
-            "Validation failed. Make sure the email address isn't used yet!"
-          );
-        }
-        if (res.status !== 200 && res.status !== 201) {
-          console.log("Error!");
-          throw new Error("Creating a user failed!");
-        }
-        return res.json();
-      })
-      .then((resData) => {
-        console.log(resData);
-        this.setState({ isAuth: false, authLoading: false });
-        this.props.history.replace("/");
-      })
-      .catch((err) => {
-        console.log(err);
-        this.setState({
-          isAuth: false,
-          authLoading: false,
-          error: err,
-        });
-      });
-  };
-
-  setAutoLogout = (milliseconds) => {
-    setTimeout(() => {
-      this.logoutHandler();
-    }, milliseconds);
-  };
-
-  errorHandler = () => {
-    this.setState({ error: null });
-  };
   render() {
     return (
       <Fragment>
@@ -194,4 +87,4 @@ class App extends Component {
   }
 }
 
-export default withRouter(App);
+export default App;

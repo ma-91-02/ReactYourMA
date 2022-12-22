@@ -16,7 +16,7 @@ const Features = () => {
         <div className="container">
           <div className="box quality">
             <div className="img-holder">
-              <img src={feat1} alt="" />
+              <img src={feat1} alt="features1" height="100%" width="100%" />
             </div>
             <h2>{t("quality")}</h2>
             <p>{t("qualityContent")}</p>
@@ -24,7 +24,7 @@ const Features = () => {
           </div>
           <div className="box time">
             <div className="img-holder">
-              <img src={feat2} alt="" />
+              <img src={feat2} alt="features2" height="100%" width="100%" />
             </div>
             <h2>{t("time")}</h2>
             <p> {t("timeContent")}</p>
@@ -32,7 +32,7 @@ const Features = () => {
           </div>
           <div className="box passion">
             <div className="img-holder">
-              <img src={feat3} alt="" />
+              <img src={feat3} alt="features3" height="100%" width="100%" />
             </div>
             <h2>{t("passion")}</h2>
             <p>{t("passionContent")}</p>
@@ -40,7 +40,7 @@ const Features = () => {
           </div>
         </div>
       </div>
-      <div class="spikes"></div>
+      <div className="spikes"></div>
     </>
   );
 };

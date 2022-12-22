@@ -6,9 +6,9 @@ import { useTranslation } from "react-i18next";
 import gall1 from "../images/gallery-01.png";
 import gall2 from "../images/gallery-02.png";
 import gall3 from "../images/gallery-03.jpg";
-import gall4 from "../images/gallery-04.png";
-import gall5 from "../images/gallery-05.jpg";
-import gall6 from "../images/gallery-06.png";
+import gall4 from "../images/gallery-04.webp";
+import gall5 from "../images/gallery-05.webp";
+import gall6 from "../images/gallery-06.webp";
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -99,12 +99,12 @@ const Footer = () => {
           </div>
         </div>
         <div className="footerGallery">
-          <img src={gall1} alt="" />
-          <img src={gall2} alt="" />
-          <img src={gall3} alt="" />
-          <img src={gall4} alt="" />
-          <img src={gall5} alt="" />
-          <img src={gall6} alt="" />
+          <img src={gall1} alt="galleray1"height="100%" width="100%" />
+          <img src={gall2} alt="galleray2"height="100%" width="100%" />
+          <img src={gall3} alt="galleray3"height="100%" width="100%" />
+          <img src={gall4} alt="galleray4"height="100%" width="100%" />
+          <img src={gall5} alt="galleray5"height="100%" width="100%" />
+          <img src={gall6} alt="galleray6"height="100%" width="100%" />
         </div>
       </div>
       <p className="copyright">

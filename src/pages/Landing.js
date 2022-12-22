@@ -22,11 +22,11 @@ const Landing = () => {
           <p>{t("website_iphone_android")}</p>
         </div>
         <div className="image">
-          <img src={pic}  alt="logo"/>
+          <img src={pic}  alt="logo" height="100%" width="100%"/>
         </div>
       </div>
-      <a href="#events" class="go-down">
-        <i class="fas fa-angle-double-down fa-2x"></i>
+      <a href="#events" className="go-down">
+        <i className="fas fa-angle-double-down fa-2x"></i>
       </a>
     </div>
   );
